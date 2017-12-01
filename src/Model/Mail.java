@@ -1,17 +1,23 @@
 package Model;
 
 public class Mail {
-    public Mail(String mail) {
+    
+    private String mail;
+    private int Id;
+
+    public Mail(String mail, int Id) {
         this.mail = mail;
+        this.Id = Id;
     }
 
     public String getMail() {
         return mail;
     }
-    public String getDomain(){
-        String [] domain=mail.split("@");
-        return domain[1];
-    }
 
-    private String mail;
+    public int getId() {
+        return Id;
+    }
+    
+
+    
 }
